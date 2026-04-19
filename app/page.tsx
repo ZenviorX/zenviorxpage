@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="grid gap-6 lg:grid-cols-[1.64fr_0.72fr]">
+        <section className="grid gap-6 lg:grid-cols-[1.55fr_0.6fr]">
           <div className="glass-panel-light rounded-[28px] p-8 md:p-10">
             <p className="mb-4 text-xs uppercase tracking-[0.35em] text-zinc-500">
               Personal Homepage
@@ -113,7 +113,7 @@ export default function Home() {
                 <img
                   src="/images/avatar.jpg"
                   alt="avatar"
-                  className="h-50 w-full object-cover transition duration-500 hover:scale-[1.03]"
+                  className="h-full w-full object-cover transition duration-500 hover:scale-[1.03]"
                 />
               </div>
 
