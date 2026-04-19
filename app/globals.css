@@ -22,9 +22,43 @@ a {
 
 .glass-panel-light {
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.glass-panel-light .text-lg.font-bold {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937; /* 深色 */
+}
+
+.glass-panel-light .text-3xl {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0284c7; /* 时间蓝色 */
+}
+
+.glass-panel-light .text-xl.font-semibold {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.glass-panel-light .flex.justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.glass-panel-light .space-y-4 {
+  margin-bottom: 15px;
+}
+
+.glass-panel-light .flex.items-center {
+  display: flex;
+  align-items: center;
 }
 
 nav a {

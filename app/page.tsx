@@ -128,12 +128,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="glass-panel-light rounded-[28px] p-5">
               <StatusBar />
-              <div className="mt-3 text-lg font-semibold text-zinc-900">
-                正在持续搭建中……
-              </div>
-            </div>
           </div>
         </section>
 
