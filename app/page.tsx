@@ -56,7 +56,6 @@ export default function Home() {
                 联系
               </a>
             </nav>
-            <StatusBar />
           </div>
         </header>
 
@@ -130,14 +129,10 @@ export default function Home() {
             </div>
 
             <div className="glass-panel-light rounded-[28px] p-5">
-              <div className="text-sm text-zinc-500">站点状态</div>
+              <StatusBar />
               <div className="mt-3 text-lg font-semibold text-zinc-900">
-                正在持续搭建中
+                正在持续搭建中……
               </div>
-              <p className="mt-2 text-sm leading-7 text-zinc-600">
-                目前已完成主页与画廊基础结构，后续会继续加入文章归档、
-                实验整理、项目详情与更多动态效果。
-              </p>
             </div>
           </div>
         </section>
