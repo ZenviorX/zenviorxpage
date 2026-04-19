@@ -1,4 +1,5 @@
 import Link from "next/link";
+import StatusBar from "./components/StatusBar";
 
 const featuredCards = [
   {
@@ -35,6 +36,7 @@ export default function Home() {
       </div>
 
       <section className="mx-auto max-w-6xl px-5 pb-16 pt-6 md:px-8">
+        <StatusBar />
         <header className="sticky top-4 z-20 mb-10">
           <div className="glass-panel-light flex items-center justify-between rounded-2xl px-5 py-4">
             <div className="text-lg font-semibold tracking-wide text-zinc-900">
