@@ -6,8 +6,8 @@ html {
 
 body {
   margin: 0;
-  background: #09090b;
-  color: #f4f4f5;
+  background: #f3f6fb;
+  color: #27272a;
   font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
@@ -20,12 +20,12 @@ a {
   text-decoration: none;
 }
 
-.glass-panel {
-  background: rgba(24, 24, 27, 0.58);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.28),
-    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    0 10px 30px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
 }
