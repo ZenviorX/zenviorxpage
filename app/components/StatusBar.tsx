@@ -54,7 +54,12 @@ export default function StatusBar() {
       <div className="flex justify-between items-center">
         {/* 系统运行状态 */}
         <div className="flex items-center gap-3 text-sm text-zinc-600">
-          <span className="inline-block h-3 w-3 rounded-full bg-emerald-500 shadow-[0_0_12px_rgba(16,185,129,0.45)]" />
+          {/* 使用 Image 组件来显示心脏图标 */}
+          <img
+            src="/icon/heart.svg"
+            alt="Heart"
+            className="h-5 w-5 animate-pulse"
+          />
           <span className="font-medium">系统已稳定运行</span>
         </div>
 

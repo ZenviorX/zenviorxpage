@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="grid gap-6 lg:grid-cols-[1.4fr_0.9fr]">
+        <section className="grid gap-6 lg:grid-cols-[1.64fr_0.72fr]">
           <div className="glass-panel-light rounded-[28px] p-8 md:p-10">
             <p className="mb-4 text-xs uppercase tracking-[0.35em] text-zinc-500">
               Personal Homepage
@@ -113,18 +113,15 @@ export default function Home() {
                 <img
                   src="/images/avatar.jpg"
                   alt="avatar"
-                  className="h-72 w-full object-cover transition duration-500 hover:scale-[1.03]"
+                  className="h-50 w-full object-cover transition duration-500 hover:scale-[1.03]"
                 />
               </div>
 
               <div className="mt-5">
-                <h2 className="text-xl font-semibold text-zinc-900">当前关注</h2>
-                <ul className="mt-4 space-y-3 text-sm leading-7 text-zinc-600">
-                  <li>• 密码学与网络安全基础</li>
-                  <li>• CTF / Web / PWN 学习过程</li>
-                  <li>• Python 与前端开发实践</li>
-                  <li>• 摄影作品整理与展示表达</li>
-                </ul>
+                <h2 className="text-3xl text-center font-bold text-sky-700">ZenviorX</h2>
+                <p className="mt-4 space-y-3 text-sm leading-7 text-zinc-600">
+                  穿梭于代码、网络安全的普通人。爱好摄影，喜欢记录生活的美景，梦想把风景都装进镜头
+                </p>
               </div>
             </div>
 
