@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Toby | Personal Site",
-  description: "个人主页与光影画廊",
+  title: "ZenviorX | Personal Site",
+  description: "个人主页与摄影画廊。",
 };
 
 export default function RootLayout({

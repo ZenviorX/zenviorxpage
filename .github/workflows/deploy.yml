@@ -3,39 +3,35 @@ name: Deploy Next.js to Cloudflare Pages
 on:
   push:
     branches:
-      - main  # 触发部署的分支
+      - main
+  workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
-      # 1. 检出代码
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      # 2. 设置 Node.js 环境
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '20.x'  # 确保使用最新的 Node.js 版本
+          node-version: 20
+          cache: npm
 
-      # 3. 安装依赖
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      # 4. 构建 Next.js 项目
-      - name: Build Next.js project
+      - name: Build static site
         run: npm run build
 
-      # 5. 导出静态文件
-      - name: Export static files
-        run: npm run export
-
-      # 6. 部署到 Cloudflare Pages
       - name: Deploy to Cloudflare Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: cloudflare/wrangler-action@v3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 token 进行部署
-          publish_dir: ./out  # 输出目录，next export 会生成 out 文件夹
-          cname: 'www.zenviorx.top'  # 如果你使用自定义域名，配置 cname
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name=zenviorxpage

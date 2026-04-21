@@ -6,7 +6,6 @@ const photos = [
   { src: "/images/gallery3.jpg", title: "Light 03" },
   { src: "/images/gallery4.jpg", title: "Light 04" },
   { src: "/images/gallery5.jpg", title: "Light 05" },
-  { src: "/images/gallery6.jpg", title: "Light 06" },
 ];
 
 export default function PhotowallPage() {
@@ -24,7 +23,7 @@ export default function PhotowallPage() {
             href="/"
             className="rounded-2xl border border-zinc-700 px-4 py-2 text-sm transition hover:bg-zinc-900"
           >
-            返回主页
+            返回首页
           </Link>
         </header>
 
