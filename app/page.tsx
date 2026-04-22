@@ -92,20 +92,6 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
-              {quickStats.map((item) => (
-                <div
-                  key={item.label}
-                  className="rounded-2xl border border-white/75 bg-white/72 px-5 py-4 shadow-[0_8px_20px_rgba(15,23,42,0.05)]"
-                >
-                  <div className="text-[2rem] font-bold leading-none text-zinc-900">
-                    {item.value}
-                  </div>
-                  <div className="mt-3 text-sm text-zinc-500">{item.label}</div>
-                </div>
-              ))}
-            </div>
-
             <div id="about" className="mt-10">
               <div className="mb-4 text-sm text-zinc-500">关于这个主页</div>
               <h2 className="max-w-4xl text-3xl font-bold leading-tight text-sky-700 md:text-5xl">
@@ -138,10 +124,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
-            <StatusBar />
           </div>
         </section>
+
+        <section className="mt-8">
+          <StatusBar stats={quickStats} />
+        </section>
+
 
         <section id="featured" className="mt-8">
           <div className="mb-5 flex items-end justify-between">
