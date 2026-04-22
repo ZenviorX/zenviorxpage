@@ -1,5 +1,6 @@
 import Link from "next/link";
 import StatusBar from "./components/StatusBar";
+import PublishOverview from "./components/PublishOverview";
 
 const featuredCards = [
   {
@@ -124,11 +125,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            
+            <PublishOverview stats={quickStats} />
           </div>
         </section>
 
         <section className="mt-8">
-          <StatusBar stats={quickStats} />
+          <StatusBar/>
         </section>
 
 
