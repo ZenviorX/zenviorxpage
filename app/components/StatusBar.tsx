@@ -71,7 +71,7 @@ export default function StatusBar() {
               alt="Heart"
               className="h-4 w-4 animate-pulse"
             />
-            <span>系统稳定运行中</span>
+            <span>系统已稳定运行：</span>
           </div>
 
           <div className="mt-2.5 text-[1rem] font-bold text-sky-700 md:text-[1.08rem]">
